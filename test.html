@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-    <script src="drawflow.min.js"></script>
+    <script src="dist/drawflow.min.js"></script>
     <link rel="stylesheet" type="text/css" href="src/drawflow.css" />
     <style>
       #drawflow {
@@ -16,17 +16,33 @@
         left: 50px;
         border: 1px solid red;
       }
-
-
+      .but {
+          display:inline-block;
+          color:#444;
+          border:1px solid #CCC;
+          background:#DDD;
+          box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+          cursor:pointer;
+          vertical-align:middle;
+          max-width: 150px;
+          padding: 5px;
+          text-align: center;
+          margin: 5px;
+      }
+      but:active {
+          color:red;
+          box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+      }
     </style>
 </head>
 <body>
-  <div class="but" onclick="editor.addModule('nameNewModule');editor.changeModule('nameNewModule');">Tes module</div>
   <div class="but" onclick="importa()">Import1</div>
   <div class="but" onclick="import2()">Import2</div>
   <div class="but" onclick="export2()">Export</div>
-  <div class="but" onclick="importexport()">ImportFromExport</div>
   <div class="but" onclick="editor.clear()">Clear</div>
+  <div class="but" onclick="importexport()">Import From Export</div>
+  <div class="but" onclick=
+      "editor.addModule('nameNewModule'); editor.changeModule('nameNewModule');">Tes module</div>
   <div id="drawflow"></div>
   <script>
 
