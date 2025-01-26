@@ -1,3 +1,4 @@
+// npm run build   to compile to /dist folder (invokes gulp.js and webpack.js)
 export default class Drawflow {
   constructor(container, render = null, parent = null) {
     this.events = {};
