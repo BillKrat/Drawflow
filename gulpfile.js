@@ -22,3 +22,9 @@ gulp.task('default', gulp.series(
     'style'
   )
 );
+
+/*
+   https://gulpjs.com/docs/en/getting-started/quick-start/
+
+   Install gulp using the above - then invoke "gulp" at command prompt
+*/
